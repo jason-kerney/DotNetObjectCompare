@@ -1,0 +1,3 @@
+﻿Failed[0] = [1].StringProperty.Value: 'string2' != 'string property' ::	Failed
+Failed[1] = [1].IntProperty: '4' != '5' ::	Failed
+Failed[2] = [1].HiddenGetProperty: 'NULL' != 'Hidden get property' ::	Failed

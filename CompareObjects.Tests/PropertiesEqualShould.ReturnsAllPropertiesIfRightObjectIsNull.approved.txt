@@ -1,0 +1,4 @@
+﻿StringProperty: 'string property' != '' -- > 'Failed'
+IntProperty: '5' != '' -- > 'Failed'
+ReadonlyProperty: 'False' != '' -- > 'Failed'
+HiddenGetProperty: 'Hidden get property' != '' -- > 'Failed'

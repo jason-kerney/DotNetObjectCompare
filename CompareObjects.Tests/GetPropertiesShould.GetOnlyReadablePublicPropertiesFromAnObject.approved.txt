@@ -1,0 +1,4 @@
+﻿HiddenGetProperty => Hidden get property
+IntProperty => 5
+ReadonlyProperty => False
+StringProperty => string property
