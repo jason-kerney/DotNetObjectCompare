@@ -1,0 +1,6 @@
+/_NCrunch_CompareObjects/
+*.user
+*.suo
+*/bin/
+*/obj/
+*.received.txt
