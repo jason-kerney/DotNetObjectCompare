@@ -71,12 +71,11 @@ namespace CompareObjects
 		/// This method returns a list of properties that are not equal between two objects. 
 		/// It will skip any indexed properties and not tell you which were skipped. 
 		/// </summary>
-		/// <typeparam name="T">The base type of object to be compared.</typeparam>
 		/// <param name="leftObject">The left hand object being compared.</param>
 		/// <param name="rightObject">The right hand object being compared.</param>
 		/// <param name="skips">A list of property names not to be used in the comparison.</param>
 		/// <returns>An enumerable set of properties that failed comparison for any reason. If returnOnlyFailed is true, this list will not contain skipped properties.</returns>
-		public static IEnumerable<PropertyNotPassedInfo> PropertiesEqual<T>(this T leftObject, T rightObject, params string[] skips) where T : class
+		public static IEnumerable<PropertyNotPassedInfo> PropertiesEqual(this object leftObject, object rightObject, params string[] skips) 
 		{
 			var results = new List<PropertyNotPassedInfo>();
 			var mutableSkips = new List<string>(skips);
@@ -120,6 +119,11 @@ namespace CompareObjects
 				{
 					var currentResults = new List<PropertyNotPassedInfo>();
 					if (mutableSkips.Contains(rightObjectProperty.Name))
+					{
+						continue;
+					}
+
+					if (!leftObjectPropertyValues.ContainsKey(rightObjectProperty.Name))
 					{
 						continue;
 					}
