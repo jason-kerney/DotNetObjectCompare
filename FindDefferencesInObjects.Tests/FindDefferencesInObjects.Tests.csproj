@@ -59,6 +59,12 @@
       <DependentUpon>GetAnObjectProperties.feature</DependentUpon>
     </Compile>
     <Compile Include="GetAnObjectPropertiesSteps.cs" />
+    <Compile Include="GetPropertyValuesShould.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetPropertyValuesShould.feature</DependentUpon>
+    </Compile>
+    <Compile Include="GetPropertyValuesShouldSteps.cs" />
     <Compile Include="Object Properties Compare Themselves.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -74,6 +80,10 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>GetAnObjectProperties.feature.cs</LastGenOutput>
     </None>
+    <None Include="GetPropertyValuesShould.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>GetPropertyValuesShould.feature.cs</LastGenOutput>
+    </None>
     <None Include="Object Properties Compare Themselves.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Object Properties Compare Themselves.feature.cs</LastGenOutput>
@@ -85,6 +95,10 @@
       <Project>{9eadae55-0d6b-4965-af33-9607fb2c8562}</Project>
       <Name>FindDifferencesInObjects</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GetAnObjectPropertiesFeature.GetAListOfPropertiesFromAnObject.ForScenario.Simple.approved.txt" />
+    <Content Include="GetAnObjectPropertiesFeature.GetAllReadablePropertiesFromAnObject.ForScenario.Complex.approved.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

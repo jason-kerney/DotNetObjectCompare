@@ -44,6 +44,7 @@
     <Compile Include="BasicProperties.fs" />
     <None Include="Script.fsx" />
     <Compile Include="ObjectProperties.fs" />
+    <Compile Include="PropertyValues.fs" />
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
