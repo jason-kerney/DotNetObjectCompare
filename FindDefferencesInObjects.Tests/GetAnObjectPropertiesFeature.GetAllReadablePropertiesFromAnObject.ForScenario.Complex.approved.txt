@@ -1,0 +1,4 @@
+﻿info[0] = StringProperty Property System.String System.String StringProperty
+info[1] = IntProperty Property System.Int32 Int32 IntProperty
+info[2] = ReadonlyProperty Property System.Boolean Boolean ReadonlyProperty
+info[3] = HiddenGetProperty Property System.String System.String HiddenGetProperty

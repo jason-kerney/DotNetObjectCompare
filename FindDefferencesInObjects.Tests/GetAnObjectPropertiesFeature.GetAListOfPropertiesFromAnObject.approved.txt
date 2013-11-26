@@ -1,0 +1,2 @@
+﻿info[0] = Age Property System.Int32 Int32 Age
+info[1] = Class Property System.String System.String Class
