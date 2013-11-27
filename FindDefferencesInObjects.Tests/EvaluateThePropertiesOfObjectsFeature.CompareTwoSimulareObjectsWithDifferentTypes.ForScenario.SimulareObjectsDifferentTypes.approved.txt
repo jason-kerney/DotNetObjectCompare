@@ -1,0 +1,1 @@
+﻿Result[0] = IntProperty: '34' <> 'IntProperty'

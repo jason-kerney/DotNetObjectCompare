@@ -61,13 +61,13 @@
     <Compile Include="GetAnObjectPropertiesSteps.cs">
       <DependentUpon>GetAnObjectProperties.feature</DependentUpon>
     </Compile>
-    <Compile Include="GetPropertyValuesShould.feature.cs">
+    <Compile Include="EvaluateThePropertiesOfObjects.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>GetPropertyValuesShould.feature</DependentUpon>
+      <DependentUpon>EvaluateThePropertiesOfObjects.feature</DependentUpon>
     </Compile>
-    <Compile Include="GetPropertyValuesShouldSteps.cs">
-      <DependentUpon>GetPropertyValuesShould.feature</DependentUpon>
+    <Compile Include="EvaluateThePropertiesOfObjectsSteps.cs">
+      <DependentUpon>EvaluateThePropertiesOfObjects.feature</DependentUpon>
     </Compile>
     <Compile Include="Object Properties Compare Themselves.feature.cs">
       <AutoGen>True</AutoGen>
@@ -84,9 +84,9 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>GetAnObjectProperties.feature.cs</LastGenOutput>
     </None>
-    <None Include="GetPropertyValuesShould.feature">
+    <None Include="EvaluateThePropertiesOfObjects.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>GetPropertyValuesShould.feature.cs</LastGenOutput>
+      <LastGenOutput>EvaluateThePropertiesOfObjects.feature.cs</LastGenOutput>
     </None>
     <None Include="Object Properties Compare Themselves.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
@@ -102,6 +102,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="EvaluateThePropertiesOfObjectsFeature.GivenAnObjectGetTheValuesOfItsProperties.ForScenario.GetProperties.approved.txt">
+      <DependentUpon>EvaluateThePropertiesOfObjects.feature</DependentUpon>
+    </Content>
     <Content Include="GetAnObjectPropertiesFeature.GetAListOfPropertiesFromAnObject.ForScenario.Simple.approved.txt">
       <DependentUpon>GetAnObjectProperties.feature</DependentUpon>
     </Content>
