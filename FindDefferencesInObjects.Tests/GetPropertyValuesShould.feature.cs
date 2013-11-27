@@ -19,8 +19,8 @@ namespace FindDefferencesInObjects.Tests
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "1.9.0.77")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("GetPropertyValuesShould")]
-    public partial class GetPropertyValuesShouldFeature
+    [NUnit.Framework.DescriptionAttribute("Evaluate the properties of objects")]
+    public partial class EvaluateThePropertiesOfObjectsFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
@@ -32,7 +32,7 @@ namespace FindDefferencesInObjects.Tests
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "GetPropertyValuesShould", "In order to avoid silly mistakes\r\nAs a math idiot\r\nI want to be told the sum of t" +
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Evaluate the properties of objects", "In order to avoid silly mistakes\r\nAs a math idiot\r\nI want to be told the sum of t" +
                     "wo numbers", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
@@ -66,10 +66,10 @@ namespace FindDefferencesInObjects.Tests
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Given an object get its values")]
-        public virtual void GivenAnObjectGetItsValues()
+        [NUnit.Framework.DescriptionAttribute("Given an object get the values of its properties")]
+        public virtual void GivenAnObjectGetTheValuesOfItsProperties()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Given an object get its values", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Given an object get the values of its properties", ((string[])(null)));
 #line 6
 this.ScenarioSetup(scenarioInfo);
 #line hidden

@@ -1,0 +1,4 @@
+﻿Property[0] = StringProperty: 'StringProperty' System.String
+Property[1] = IntProperty: '34' System.Int32
+Property[2] = ReadonlyProperty: 'True' System.Boolean
+Property[3] = HiddenGetProperty: '' System.String

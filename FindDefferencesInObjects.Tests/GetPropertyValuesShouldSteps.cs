@@ -28,7 +28,7 @@ namespace FindDefferencesInObjects.Tests
 		public void ThenTheResultShouldBeAVerifiableListOfProperties(string key)
 		{
 			var properties = (PropertyValues) ScenarioContext.Current[key];
-
+			;
 			Approvals.VerifyAll(properties.Values, "Property", value => string.Format("{0}: '{1}' {2}", value.Name, value.Value, value.PropertyType));
 		}
 	}

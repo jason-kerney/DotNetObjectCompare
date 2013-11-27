@@ -1,6 +1,8 @@
 ﻿namespace FindDifferencesInObjects
 open System
 open System.Linq
+open BasicProperties
+open System.Reflection
 
 type PropertyDef = {
     Name : string;
@@ -9,5 +11,5 @@ type PropertyDef = {
 }
 
 type PropertyValues(obj : Object) =
-    member val Values = BasicProperties.getProperties(obj).Select(fun p -> { Name = "Test"; Value = "Hello"; PropertyType = typedefof<string> })
+    member val Values = getProperties(obj).Select(fun (p : PropertyInfo ) -> { Name = p.Name; Value = p.GetValue(obj, null); PropertyType = p.PropertyType })
 
